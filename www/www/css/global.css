@@ -85,7 +85,7 @@ h1 {
 	margin-bottom: 15px;
 }
 h2 {
-	margin-bottom: 15px;
+	margin-bottom: -55px;
 }
 h3 {
 	margin-bottom: 15px;
@@ -2431,7 +2431,7 @@ blockquote:after {
 }
 .aligncenter {
 	text-align: center;
-	margin: 0 auto;
+	margin: 0px auto;
 	display: block
 }
 .aligncenter img {
