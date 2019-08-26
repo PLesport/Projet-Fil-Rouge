@@ -3318,7 +3318,7 @@ body:not(.template-slider) #Content {
 	background-color: #fafbfa;
 }
 #Subheader {
-	background-color: rgba(232, 237, 230, 1);
+	background-color: #d0e1c7;
 }
 .header-classic #Action_bar, .header-plain #Action_bar, .header-split #Action_bar, .header-stack #Action_bar {
 	background-color: #2C2C2C;
@@ -4129,6 +4129,7 @@ h6 {
 }
 #Top_bar .top_bar_right, .header-plain #Top_bar .top_bar_right {
 	height: 64px;
+	
 }
 #Top_bar .top_bar_right_wrapper {
 	top: 12px;
