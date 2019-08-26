@@ -3351,7 +3351,7 @@ body, ul.timeline_items, .icon_box a .desc, .icon_box a:hover .desc, .feature_li
 	border-color: #cb9734;
 }
 a {
-	color: #cb9734;
+	color: #f5f4f1;
 }
 a:hover {
 	color: #a97a21;
@@ -3728,7 +3728,7 @@ body, button, span.date_label, .timeline_items li h3 span, input[type="submit"],
 	font-family: "Caudex", Arial, Tahoma, sans-serif;
 }
 h1, h2, h3, h4, .text-logo #logo {
-	font-family: "Caudex", Arial, Tahoma, sans-serif;
+	font-family: "Roboto", Arial, Tahoma, sans-serif;
 }
 h5, h6 {
 	font-family: "Lato", Arial, Tahoma, sans-serif;
@@ -4372,6 +4372,7 @@ h6 {
 
 .one.mcb-wrap {
 	width: 100%;
+	padding-bottom: 82px;
 }
 
 /* 1/1 */
