@@ -2,34 +2,126 @@
 width: 73%;
 }
 
+ #authentification #login-form .block{
+margin-left:16%;
+ }
+  #authentification .login-border{
+    border: 1px solid rgba(0,0,0,.25);
+    border-top-color: rgba(0, 0, 0, 0.25);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: rgba(0, 0, 0, 0.25);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: rgba(0, 0, 0, 0.25);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgba(0, 0, 0, 0.25);
+    border-left-style: solid;
+    border-left-width: 1px;
+
+    margin-top: 8%;
+    margin-right: 33%;
+    margin-bottom: 8%;
+    margin-left: 33%;
+  }
+
+
+#authentification .h3{
+font-size:30px;
+text-align: center;
+margin-top: 5%;
+}
+
+#authentification .lien_auth{
+  font-style:italic;
+   text-align: center;
+  margin-bottom: 4%;
+  }
+
+  #authentification a{
+    color:#1c4e2a;
+    }
+
+  
+#authentification .button_auth{
+color:white;
+background-color:#644b1d;
+}
+
+a.active{
+  background-color: #d0e1c7;
+  color: rgb(8, 0, 0);
+}
+
 .sidenav {
-    width: 150px;
-    position: fixed;
-    z-index: 1;
-    top: 140px;
-    left: 10px;
-    background: #d0e1c7;
-    overflow-x: hidden;
-    padding: 8px 0;
+  width: 15%;
+  position: fixed;
+  z-index: 1;
+  top: 42%;
+  left: 0%;
+  background: #d0e1c7;
+  overflow-x: hidden;
+  padding: 18px 0;
+  text-align: left;
+}
+
+.sidenav1 {
+  width: 15%;
+  position: fixed;
+  z-index: 1;
+  top: 18%;
+  left: 0%;
+  background: #CC9966;
+  overflow-x: hidden;
+  padding: 5%, 0%;
+  text-align: left;
+ }
+ .sidenav_admin {
+  width: 15%;
+  position: fixed;
+  z-index: 1;
+  top: 18%;
+  left: 0%;
+  color:black;
+  background: #d0e1c7;
+  overflow-x: hidden;
+  padding: 18px 0;
+  text-align: left;
+ }
+ #menu_admin a.active{
+  color:  #644b1d;
+  font-weight: bold;
+}
+#menu_admin a{
+  color:  black;
+  font-size: 120%;
+  padding: 5%,5%;
+}
+
+  #idclient span {
+    padding: 0px 0px 3% 5%;
+    text-decoration: none;
+    font-size: 105%;
+    color: white;
+    display: block;
     text-align: left;
   }
-  
-  .sidenav a {
-    padding: 0px 0px 0px 13px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #2196F3;
-    display: block;
-  }
-  .sidenav p {
-  padding: 0px 0px 0px 13px;
+
+    .sidenav a {
+  padding: 0px 0px 3% 5%;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 120%;
   color: black;
   display: block;
   }
-  .sidenav a:hover {
+  #menuclient .sidenav a:hover {
     color: #064579;
+  }
+  
+  #menuclient a.active{
+    color:  #644b1d;
+    font-weight: bold;
   }
   .main {
     margin-left: 160px; /* Same width as the sidebar + left position in px */
@@ -66,3 +158,77 @@ width: 73%;
   }
 
   .pagination a:hover:not(.active) {background-color: #d0e1c7;}
+
+  #orders_table #login-form .block{
+    margin-left:10%;
+     }
+      #orders_table .login-border{
+        border: 1px solid rgba(0,0,0,.25);
+        border-top-color: rgba(0, 0, 0, 0.25);
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-right-color: rgba(0, 0, 0, 0.25);
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-bottom-color: rgba(0, 0, 0, 0.25);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-left-color: rgba(0, 0, 0, 0.25);
+        border-left-style: solid;
+        border-left-width: 1px;
+    
+        margin-top: 3%;
+        margin-right: 5%;
+        margin-bottom: 8%;
+        margin-left: 20%;
+        padding: 2%, 2%;
+      }
+      #shopping_cart .login-border{
+        border: 1px solid rgba(0,0,0,.25);
+        border-top-color: rgba(0, 0, 0, 0.25);
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-right-color: rgba(0, 0, 0, 0.25);
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-bottom-color: rgba(0, 0, 0, 0.25);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-left-color: rgba(0, 0, 0, 0.25);
+        border-left-style: solid;
+        border-left-width: 1px;
+ 
+        margin-top: 3%;
+        margin-right: 5%;
+        margin-bottom: 8%;
+        margin-left: 5%;
+        padding: 2%, 2%;
+      }
+    #orders .a{
+      color:#6b7a6b;
+    }
+    
+    #orders_table .h3{
+    font-size:30px;
+    text-align: center;
+    margin-top: 2%;
+    }
+    #shopping_cart .h3{
+      font-size:30px;
+      text-align: center;
+      margin-top: 2%;
+      }
+    #submit_order{
+      margin-left: 40%;
+      margin-top:3%;
+      margin-bottom: 5%;
+      color:white;
+      background-color:#644b1d;
+    }
+    #order_status  {
+      margin-left: 10%;
+    }
+
+
+
+  
