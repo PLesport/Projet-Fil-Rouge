@@ -137,134 +137,180 @@
             </div>
 
             <div id="menuclient" class="sidenav">
-                <a class="menu1" href="#Modification_profil">Modifier mon Profil</a>
+                <a class="active" href="#Modification_profil">Modifier mon Profil</a>
                 <br>
-                <a class="active" href="#Recherche_commandes">Recherche des Commandes</a>
+                <a class="menu2" href="#Recherche_commandes">Recherche des Commandes</a>
                 <br>
                 <a class="menu1" href="#Historique_commandes">Historique des Commandes</a>
 
             </div>
 
-            <body id="orders_table">
+            <body id="authentification">
 
                 <div class="login-border">
-                    <div id="content-wrapper" class="col-6">
+                    <div id="content-wrapper" class="col-12">
 
                         <section id="main">
 
                             <div id="content" class="page-content my-account-content row justify-content-center mb-7">
-                                <div class="col-lg-6">
+                                <div class="col-lg-10">
                                     <h1 class="h3">
 
-                                        Rechercher une commande
+                                        Mon adresse
 
                                     </h1>
 
                                     <form id="login-form" method="post">
+
                                         <section>
+                                            <input type="hidden" name="back" value="my-account">
                                             <div class="block ">
                                                 <label class="col-md-3 form-control-label required">
-                                                    Numéro de la commande
+                                                   Adresse de livraison
+                                                </label>
+                                                <div class="col-md-12 ">
+                                                    <input style="width:30% " class="form-control" name="choix_livraison"
+                                                        type="radio" value="" required="">
+                                                    <span>Maison </span>
+                                        </div>
+                                            </div>
+                                            <div class="block ">
+                                                <label class="col-md-3 form-control-label required">
+                                                    Jean BONBEUR
                                                 </label>
                                                 <div class="col-md-6 ">
-                                                    <input style="width:80% " class="form-control" name="order_number"
+                                                    <input style="width:80% " class="form-control" name="prenom"
                                                         type="text" value="" required="">
                                                 </div>
                                             </div>
                                             <div class="block ">
-                                                <span>ET /OU </span>
-                                                <br>
-                                                <label>
-                                                    Date de la commande
+                                                <label class="col-md-3 form-control-label required">
+                                                    Nom
                                                 </label>
                                                 <div class="col-md-6 ">
-                                                    <input style="width:80% " class="form-control" name="order_date"
-                                                        type="text" value="" required=""
-                                                        placeholder="Format : dd/mm/aaaa">
+                                                    <input style="width:80% " class="form-control" name="nom"
+                                                        type="text" value="" required="">
                                                 </div>
                                             </div>
-                                            <div id="couillon" class="block "></div>
-                                            <span>ET /OU </span>
-                                            <br>
-                                            <label>Statut de la livraison</label>
-                                            <select id="order_status" name="orderby" class="orderby">
-                                                <option value="toutes" selected='selected'>Toutes les livraisons
-                                                </option>
-                                                <option value="livree">Livrée</option>
-                                                <option value="en_cours">En cours de livraison</option>
-                                                <option value="annulee">Annulée</option>
-                                            </select>
+                                            <div class="block ">
+                                                <label class="col-md-3 form-control-label required">
+                                                    Adresse
+                                                </label>
+                                                <div class="col-md-6 ">
+                                                    <input style="width:80% " class="form-control" name="adresse1"
+                                                        type="text" value="" required="">
+                                                    <input style="width:80% " class="form-control" name="adresse2"
+                                                        type="text" value="">
+                                                </div>
+                                            </div>
+                                            <div class="block ">
+                                                <label class="col-md-3 form-control-label required">
+                                                    Code Postal
+                                                </label>
+                                                <div class="col-md-6 ">
+                                                    <input style="width:80% " class="form-control" name="code_postal"
+                                                        type="number" value="" required="">
+                                                </div>
+                                            </div>
+                                            <div class="block ">
+                                                <label class="col-md-3 form-control-label required">
+                                                    Ville
+                                                </label>
+                                                <div class="col-md-6 ">
+                                                    <input style="width:80% " class="form-control" name="ville"
+                                                        type="text" value="" required="">
+                                                </div>
+                                            </div>
+                                            <div class="block ">
+                                                <label class="col-md-3 form-control-label required">
+                                                    Téléphone
+                                                </label>
+                                                <div class="col-md-6 ">
+                                                    <input style="width:80% " class="form-control" name="telephone"
+                                                        type="tel" value="" required="">
+                                                </div>
+                                            </div>
+                                            <div class="block ">
+                                                <label class="col-md-3 form-control-label required">
+                                                    E-mail
+                                                </label>
+                                                <div class="col-md-6 ">
+                                                    <input style="width:80% " class="form-control" name="email"
+                                                        type="email" value="" required="">
+                                                </div>
+                                            </div>
+
+                                            <div class="block">
+                                                <label class="col-md-3 form-control-label required">
+                                                    Mot de passe
+                                                </label>
+                                                <input style="width:80% " class="form-control" name="password"
+                                                    type="password" value="" required="">
+                                                <div class="col-md-9 ">
+                                                </div>
+                                            </div>
 
                                         </section>
-                                        <div class="pagination">
-                                            <span>
-                                                <h5>Pages :
-                                                    <a class="active" href="page1">1</a>
-                                                    <a href="page2">2</a>
-                                                    <a href="page2">3</a>
-                                                    <a href="page3">...</a>
-                                                    <a href="page3">7</a>
-                                                </h5>
-                                            </span>
-                                        </div>
-                                        <footer>
-                                            <input id="submit_ordre" type="button" value="Détail de la commande"
-                                                style="margin-left:40%; margin-top:3%;margin-bottom:4%;">
+
+
+                                        <footer class="form-footer clearfix text-center">
+                                                <input id="submit_ordre" type="button" value="Enregistrer les modifications" style="margin-left:30%; margin-top:3%;margin-bottom:4%;">
                                             </button>
-                                </div>
-                                </footer>
+                                            </div>
+                                        </footer>
 
-                                </form>
-                            </div>
+                                    </form>
+
+                        </section>
                     </div>
-
-
-                    </form>
                 </div>
-            </body>
+
+
+                </form>
         </div>
-        <div class="footer_copy" style="text-align: center; background-color: #d0e1c7;">
-            <div class="container">
-                <div class="column one">
-                    <div class="copyright" style="margin-top: 3%;">
-                        &copy; 2019 Original Thé et Café - Réveillez vos sens - HTML by <a target="_blank"
-                            rel="nofollow" href="http://bit.ly/1M6lijQ">Groupe Original
-                            Thé et Café</a>
-                    </div>
-                    <ul class="social"></ul>
-                </div>
+</body>
+<div class="footer_copy" style="text-align: center; background-color: #d0e1c7;">
+    <div class="container">
+        <div class="column one">
+            <div class="copyright" style="margin-top: 3%;">
+                &copy; 2019 Original Thé et Café - Réveillez vos sens - HTML by <a target="_blank" rel="nofollow"
+                    href="http://bit.ly/1M6lijQ">Groupe Original
+                    Thé et Café</a>
             </div>
+            <ul class="social"></ul>
         </div>
+    </div>
+</div>
 
 
-        <!-- JS -->
-        <script src="../../js/jquery-2.1.4.min.js"></script>
+<!-- JS -->
+<script src="../../js/jquery-2.1.4.min.js"></script>
 
-        <script src="../../js/mfn.menu.js"></script>
-        <script src="../../js/jquery.plugins.js"></script>
-        <script src="../../js/jquery.jplayer.min.js"></script>
-        <script src="../../js/animations/animations.js"></script>
-        <script src="../../js/scripts.js"></script>
+<script src="../../js/mfn.menu.js"></script>
+<script src="../../js/jquery.plugins.js"></script>
+<script src="../../js/jquery.jplayer.min.js"></script>
+<script src="../../js/animations/animations.js"></script>
+<script src="../../js/scripts.js"></script>
 
-        <script id="mfn-dnmc-retina-js">
-            jQuery(window).load(function () {
-                var retina = window.devicePixelRatio > 1 ? true : false;
-                if (retina) {
-                    var retinaEl = jQuery("#logo img.logo-main");
-                    var retinaLogoW = retinaEl.width();
-                    var retinaLogoH = retinaEl.height();
-                    retinaEl.attr("src", "images/retina-herbal.png").width(retinaLogoW).height(retinaLogoH);
-                    var stickyEl = jQuery("#logo img.logo-sticky");
-                    var stickyLogoW = stickyEl.width();
-                    var stickyLogoH = stickyEl.height();
-                    stickyEl.attr("src", "images/retina-herbal.png").width(stickyLogoW).height(stickyLogoH);
-                    var mobileEl = jQuery("#logo img.logo-mobile");
-                    var mobileLogoW = mobileEl.width();
-                    var mobileLogoH = mobileEl.height();
-                    mobileEl.attr("src", "images/retina-herbal.png").width(mobileLogoW).height(mobileLogoH);
-                }
-            });
-        </script>
+<script id="mfn-dnmc-retina-js">
+    jQuery(window).load(function () {
+        var retina = window.devicePixelRatio > 1 ? true : false;
+        if (retina) {
+            var retinaEl = jQuery("#logo img.logo-main");
+            var retinaLogoW = retinaEl.width();
+            var retinaLogoH = retinaEl.height();
+            retinaEl.attr("src", "images/retina-herbal.png").width(retinaLogoW).height(retinaLogoH);
+            var stickyEl = jQuery("#logo img.logo-sticky");
+            var stickyLogoW = stickyEl.width();
+            var stickyLogoH = stickyEl.height();
+            stickyEl.attr("src", "images/retina-herbal.png").width(stickyLogoW).height(stickyLogoH);
+            var mobileEl = jQuery("#logo img.logo-mobile");
+            var mobileLogoW = mobileEl.width();
+            var mobileLogoH = mobileEl.height();
+            mobileEl.attr("src", "images/retina-herbal.png").width(mobileLogoW).height(mobileLogoH);
+        }
+    });
+</script>
 
 </body>
 
